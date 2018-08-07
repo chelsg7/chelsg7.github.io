@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Container, Row, Col, Form, FormGroup, Label, Input, Button } from 'reactstrap';
+import {Container, Row, Col } from 'reactstrap';
 import './contact.css'
 
 class Contact extends Component {

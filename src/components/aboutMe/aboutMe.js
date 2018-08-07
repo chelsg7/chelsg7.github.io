@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Container, Row, Col, Card, CardBody } from 'reactstrap';
+import {Container, Row, Col } from 'reactstrap';
 import './about.css'
 
 class About extends Component {
