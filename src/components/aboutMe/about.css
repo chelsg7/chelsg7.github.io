@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
+
+#About{
+    padding-top: 10vh;
+    /* height: 70vh; */
+    padding-bottom: 10vh;
+    background: transparent;
+    text-align: center;
+}
+#abHead{
+    color: #FF69A3;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+#abForm{
+    color: #D6FFF6;
+    text-align: justify;
+}
+
+#thor{
+    width: auto;
+    height: auto;
+}
+
+#cent {
+    text-align: center;
+}
