@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
+
+#bod {
+    text-align: center;
+    margin: auto;
+    font-family: 'Lato', Georgia, sans-serif;
+    /* The image used */
+    background-image: url("images/back7.jpg");
+    /* Full height */
+    height: 100%; 
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
