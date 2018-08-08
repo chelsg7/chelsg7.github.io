@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
+@import url('https://fonts.googleapis.com/css?family=Lato|Luckiest+Guy');
 
 #bod {
     text-align: center;
     margin: auto;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Lato', sans-serif;
     /* The image used */
     background-image: url("images/back7.jpg");
     /* Full height */
@@ -35,5 +35,10 @@
     background-color:#FF69A3;
     color: #D6FFF6;
     opacity: .8;
+    font-family: 'Lato', sans-serif;
+}
 
+#contForm{
+    color: #D6FFF6;
+    text-emphasis: none;
 }
