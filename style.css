@@ -42,3 +42,7 @@
     color: #D6FFF6;
     text-emphasis: none;
 }
+
+#image{
+    border: 1px solid #FF69A3;
+}
