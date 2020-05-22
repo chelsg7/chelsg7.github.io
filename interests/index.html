@@ -6,12 +6,22 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
       <meta name="description" content="INLS 161 Web page created by Chelsea Gieck"/>
       <meta name="keywords" content="unc, inls"/>
-      <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css">
-      <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+      <!-- <link rel="stylesheet" type="text/css" href="stylesheets/style.css"> -->
+      <link rel="stylesheet" type="text/css" href="../stylesheets/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
 
       <title>
         Chelsea Gieck
       </title>
+
+      <!-- <script>
+        // preload two images - they must be the same size!
+        var normalButton = new Image(640,426);
+        var reverseButton = new Image(640,426);
+        normalButton.src = "../images/eiffel-day.jpg";
+        reverseButton.src = "../images/eiffel-night.jpg";
+    </script> -->
+
   </head>
   <body class="bg-light">
 
@@ -20,7 +30,7 @@
       <div class="container">
 
         <a class="navbar-brand" href="/~gieck/INLS161-S2020/Task-02-03/">
-          <img src="images/logo-100.png" class="" alt="cg logo">
+          <img src="../images/logo-100.png" class="" alt="cg logo">
         </a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,8 +38,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="/~gieck/INLS161-S2020/Task-02-03/">Home <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+              <a class="nav-link" href="/~gieck/INLS161-S2020/Task-02-03/">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/~gieck/INLS161-S2020/Task-02-03/about/">About</a>
@@ -37,8 +47,8 @@
             <li class="nav-item">
               <a class="nav-link" href="/~gieck/INLS161-S2020/Task-02-03/classes/">Classes</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/~gieck/INLS161-S2020/Task-02-03/interests/">Interests</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="/~gieck/INLS161-S2020/Task-02-03/interests/">Interests <span class="sr-only">(current)</span></a>
             </li>
             <!-- <li class="nav-item">
               <a class="nav-link" href="/~gieck/INLS161-S2020/Task-02-03/portfolio/">Portfolio</a>
@@ -56,48 +66,55 @@
     <section class="container-fluid">
 
       <div class="container">
-        <h1 class="text-center py-3 text-success">Home</h1>
+        <h1 class="text-center py-3 text-success">Interests</h1>
 
         <div class="row pb-3">
 
           <div class="col-12 col-md-4">
-            <img src="images/open.jpg" class="img-fluid" alt="welcome">
+            <img src="../images/books.jpg" class="img-fluid" alt="books">
           </div>
 
           <div class="col-12 col-md-8">
 
-            <p>
-              My name is Chelsea Gieck and I am a Junior at UNC. I am a nontraditional student who is returning after taking some time off. I am currently a Junior studying Communication Studies.
-            </p>
+            <h6 class="text-success">10 Books I would take with me if I was marooned on a deserted island:</h6>
 
-            <p>This website was created for INLS-161 during Spring 2020.</p>
+            <ol>
+              <li>The Great Gatsby</li>
+              <li>Their Eyes Were Watching God</li>
+              <li>Hamlet</li>
+              <li>The Pleasures of the Damned</li>
+              <li>To Kill a Mockingbird</li>
+              <li>East of Eden</li>
+              <li>Invisible Monsters</li>
+              <li>Classical Mythology</li>
+              <li>The Old Man and the Sea</li>
+              <li>20,000 Leagues Under the Sea</li>
+            </ol>
 
-            <p>For more about me, please visit the <a href="/~gieck/INLS161-S2020/Task-02-03/about/">About page</a>.</p>
+            <h6 class="text-success">
+              JavaScript Image Change - click the buttons to change the image
+            </h6>
 
-            <p>My current class schedule can be found on the <a href="/~gieck/INLS161-S2020/Task-02-03/classes/">Classes page</a>.</p>
 
-            <p>My current résumé can be found <a href="/~gieck/INLS161-S2020/Task-02-03/docs/gieck.pdf">here</a>.</p>
+            <div class="row">
+              <img id="thisImg" src="../images/eiffel-day.jpg" class="img-fluid col-10 mx-auto" alt="eiffel tower"/>
+            </div>
 
-            <p>
-              Email Me: 
-              <script>
-              document.write('<'+'a'+' '+'h'+'r'+'e'+'f'+'='+"'"+'m'+'&'+'#'+'9'+'7'+';'+'i'+'&'+'#'+'1'+'0'+'8'+';'+'t'+'o'+'&'+
-              '#'+'5'+'8'+';'+'g'+'i'+'e'+'%'+'&'+'#'+'5'+'4'+';'+'3'+'&'+'#'+'1'+'0'+'7'+';'+'&'+'#'+'6'+'4'+';'+
-              'a'+'d'+'&'+'#'+'4'+'6'+';'+'%'+'7'+'5'+'&'+'#'+'1'+'1'+'0'+';'+'c'+'&'+'#'+'4'+'6'+';'+'&'+'#'+'1'+
-              '0'+'1'+';'+'&'+'#'+'1'+'0'+'0'+';'+'u'+"'"+'>'+'g'+'&'+'#'+'1'+'0'+'5'+';'+'e'+'c'+'k'+'&'+'#'+'6'+
-              '4'+';'+'&'+'#'+'9'+'7'+';'+'d'+'&'+'#'+'4'+'6'+';'+'u'+'&'+'#'+'1'+'1'+'0'+';'+'&'+'#'+'9'+'9'+';'+
-              '&'+'#'+'4'+'6'+';'+'&'+'#'+'1'+'0'+'1'+';'+'d'+'u'+'<'+'/'+'a'+'>');
-              </script>
-              <noscript>[Turn on JavaScript to see the email address]</noscript>
-            </p>
+            <div class="row">
+
+              <button class="my-1 mx-auto btn btn-success col-4" onclick="document.getElementById('thisImg').src='../images/eiffel-night.jpg'">Change the photo to evening</button>
+
+              <button class="my-1 mx-auto btn btn-success col-4" onclick="document.getElementById('thisImg').src='../images/eiffel-day.jpg'">Change the photo to day</button>
+
+            </div>
 
           </div>
-
         </div>
-
       </div>
 
-    </section>    
+    </section>
+
+
 
     <div class="bg-primary" id="footer">
       <div class="container">
@@ -143,6 +160,10 @@
         <p class="text-center text-success mb-0 pb-2">Theme from <a href="https://bootswatch.com/" target="_blank">Bootswatch</a></p>
       </div>
     </div>
+
+
+  
+
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="javascript/bootstrap.bundle.min.js"></script>
