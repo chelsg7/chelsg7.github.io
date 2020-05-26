@@ -9,3 +9,13 @@ h1, h2, h3, h4, h5, h6{
 .navbar.navbar-expand-lg.navbar-dark.bg-primary.sticky-top{
   visibility: hidden;
 }
+
+.row{
+  align-items: stretch;
+  justify-items: stretch;
+}
+
+.col-12{
+  align-self: stretch;
+  justify-self: stretch;
+}
