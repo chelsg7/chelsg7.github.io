@@ -5,3 +5,7 @@ body,html{
 h1, h2, h3, h4, h5, h6{
   font-family: 'Chelsea Market', cursive;
 }
+
+.navbar.navbar-expand-lg.navbar-dark.bg-primary.sticky-top{
+  visibility: hidden;
+}
