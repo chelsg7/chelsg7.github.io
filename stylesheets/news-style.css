@@ -19,3 +19,7 @@ h1, h2, h3, h4, h5, h6{
   align-self: stretch;
   justify-self: stretch;
 }
+
+.col-12 > .card{
+  height: 100%;
+}
