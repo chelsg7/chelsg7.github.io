@@ -10,23 +10,16 @@ h1, h2, h3, h4, h5, h6{
   visibility: hidden;
 }
 
-.row{
+/* .row{
   align-items: stretch;
   justify-items: stretch;
-}
+} */
 
 .col-12{
-  align-self: stretch;
-  justify-self: stretch;
+  align-self: center;
+  /* justify-self: stretch; */
 }
 
 .col-12 > .card{
   height: 100%;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  align-content: center;
-
 }
