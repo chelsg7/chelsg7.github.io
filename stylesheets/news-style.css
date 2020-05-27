@@ -6,9 +6,6 @@ h1, h2, h3, h4, h5, h6{
   font-family: 'Chelsea Market', cursive;
 }
 
-h1{
-  font-size: 3.5rem;
-}
 
 .navbar.navbar-expand-lg.navbar-dark.bg-primary.sticky-top{
   /* visibility: hidden; */
@@ -60,8 +57,12 @@ h1{
     text-align: center;
   }
 
+  h1{
+  font-size: 3.5rem;
+  }
+
   .card-body > h2.text-info{
     font-size: 2rem;
   }
-  
+
 }
