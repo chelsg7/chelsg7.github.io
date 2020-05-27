@@ -25,6 +25,7 @@ h1{
   position:relative; 
   display:block; 
   /* width: 100% */
+  margin-bottom: 1.5rem;
 }
 
 .vid-container > iframe{
