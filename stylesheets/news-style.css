@@ -55,7 +55,13 @@ h1{
 }
 
 @media screen and (min-width: 768px){
+
+  .text-md-center{
+    text-align: center;
+  }
+
   .card-body > h2.text-info{
     font-size: 2rem;
   }
+  
 }
