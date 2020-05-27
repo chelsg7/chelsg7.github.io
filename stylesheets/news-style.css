@@ -20,6 +20,13 @@ h1{
   justify-items: stretch;
 } */
 
+.vid-container{
+  padding-bottom:56.25%; 
+  position:relative; 
+  display:block; 
+  /* width: 100% */
+}
+
 #learn{
   background-color: transparent;
 }
