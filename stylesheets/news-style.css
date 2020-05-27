@@ -11,7 +11,8 @@ h1{
 }
 
 .navbar.navbar-expand-lg.navbar-dark.bg-primary.sticky-top{
-  visibility: hidden;
+  /* visibility: hidden; */
+  display: none;
 }
 
 /* .row{
