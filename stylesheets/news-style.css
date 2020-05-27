@@ -19,6 +19,10 @@ h1{
   justify-items: stretch;
 } */
 
+#learn{
+  background-color: transparent;
+}
+
 .col-12{
   /* align-self: baseline; */
   align-self: stretch;
