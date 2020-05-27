@@ -15,6 +15,10 @@ h1{
   display: none;
 }
 
+.card-body > h2.text-info{
+  font-size: 1.5rem;
+}
+
 /* .row{
   align-items: stretch;
   justify-items: stretch;
@@ -48,4 +52,10 @@ h1{
 
 .col-12 > .card{
   height: 100%;
+}
+
+@media screen and (min-width: 768px){
+  .card-body > h2.text-info{
+    font-size: 2rem;
+  }
 }
