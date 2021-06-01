@@ -576,7 +576,7 @@ background: linear-gradient(0deg, rgba(2,126,251,1) 0%,  rgba(0,3,255,1)100%);
 }
 .btn-12 span {
   background-color: rgb(0,172,238);
-background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
+  background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
   display: block;
   position: absolute;
   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
