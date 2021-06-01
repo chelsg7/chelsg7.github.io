@@ -84,7 +84,7 @@
   height: 0;
   border-left: 58px solid transparent;
   border-right: 41px solid transparent;
-  border-top: 99px solid mediumpurple;
+  border-top: 99px solid deepskyblue;
   transform: rotate(57deg);
 }
 .butterfly .wing i,
@@ -94,7 +94,7 @@
   position: absolute;
   width: 60px;
   height: 10px;
-  background: purple;
+  background: slateblue;
   border-radius: 50%;
 }
 .butterfly .wing.top {
@@ -105,7 +105,7 @@
   transform-origin: bottom right 0;
   transform: rotate(-10deg) rotate3d(0, 1, 0, 10deg);
   animation: flutter-top 0.3s infinite;
-  background: linear-gradient(309deg, mediumpurple 0%, mediumpurple 30%, purple 100%);
+  background: linear-gradient(309deg, deepskyblue 0%, deepskyblue 30%, slateblue 100%);
 }
 .butterfly .wing.top:after {
   left: auto;
@@ -154,7 +154,7 @@
   transform: rotate(10deg) rotate3d(0, 1, 0, -10deg);
   transform-origin: bottom left 0;
   animation: flutter-right 0.3s infinite;
-  background: linear-gradient(-309deg, mediumpurple 0%, mediumpurple 30%, purple 100%);
+  background: linear-gradient(-309deg, deepskyblue 0%, deepskyblue 30%, slateblue 100%);
 }
 .butterfly .wing.right i {
   top: 70%;
@@ -199,7 +199,7 @@
   transform: rotate(40deg) rotate3d(0, 1, 0, -10deg);
   transform-origin: top left 0;
   animation: flutter-bottom 0.3s infinite;
-  background: linear-gradient(-309deg, mediumpurple 0%, mediumpurple 30%, purple 100%);
+  background: linear-gradient(-309deg, deepskyblue 0%, deepskyblue 30%, slateblue 100%);
 }
 .butterfly .wing.bottom:after {
   content: none;
@@ -247,7 +247,7 @@
   transform: rotate(-40deg) rotate3d(0, 1, 0, 10deg);
   transform-origin: top right 0;
   animation: flutter-left 0.3s infinite;
-  background: linear-gradient(309deg, mediumpurple 0%, mediumpurple 30%, purple 100%);
+  background: linear-gradient(309deg, deepskyblue 0%, deepskyblue 30%, slateblue 100%);
 }
 .butterfly .wing.left:after {
   content: none;
