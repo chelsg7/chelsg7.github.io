@@ -1,0 +1,335 @@
+.butterfly {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: flutter 0.3s infinite;
+  width: 345px;
+  height: 215px;
+}
+.butterfly .body {
+  position: absolute;
+  z-index: 3;
+  top: 65px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 25px;
+  width: 28px;
+  height: 80px;
+  border-radius: 30% 30% 50% 50%;
+  background: #231f1d;
+  box-shadow: 2px 2px 8px #000;
+}
+.butterfly .body:after {
+  content: "";
+  position: absolute;
+  top: 60px;
+  left: 3px;
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 38px solid #231f1d;
+}
+.butterfly .body .head {
+  position: absolute;
+  z-index: 4;
+  top: -25px;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  transform: translateX(-50%);
+  background: #eeaf9c;
+  border-radius: 30px 30px 50px 50px;
+  background: repeating-linear-gradient(90deg, #231f1d, #231f1d 2px, #372f23 2px, #372f23 4px);
+  box-shadow: 2px 2px 8px #000;
+}
+.butterfly .body .head:before, .butterfly .body .head:after {
+  content: "";
+  position: absolute;
+  top: -45px;
+  right: 15px;
+  width: 100px;
+  height: 90px;
+  border: solid 1px #372f23;
+  border-color: #372f23 transparent transparent transparent;
+  border-radius: 50%/50px 50px 0 0;
+  transform: rotate(60deg);
+}
+.butterfly .body .head:after {
+  right: auto;
+  left: 15px;
+  transform: rotate(-60deg);
+}
+.butterfly .wing {
+  position: absolute;
+  width: 130px;
+  height: 120px;
+  box-shadow: 2px 2px 8px #000;
+}
+.butterfly .wing:after {
+  content: "";
+  position: absolute;
+  top: 53px;
+  left: -63px;
+  width: 0;
+  height: 0;
+  border-left: 58px solid transparent;
+  border-right: 41px solid transparent;
+  border-top: 99px solid mediumpurple;
+  transform: rotate(57deg);
+}
+.butterfly .wing i,
+.butterfly .wing i:before,
+.butterfly .wing i:after {
+  z-index: 3;
+  position: absolute;
+  width: 60px;
+  height: 10px;
+  background: purple;
+  border-radius: 50%;
+}
+.butterfly .wing.top {
+  z-index: 2;
+  top: 0;
+  left: 5px;
+  border-radius: 26% 47% 31% 98%;
+  transform-origin: bottom right 0;
+  transform: rotate(-10deg) rotate3d(0, 1, 0, 10deg);
+  animation: flutter-top 0.3s infinite;
+  background: linear-gradient(309deg, mediumpurple 0%, mediumpurple 30%, purple 100%);
+}
+.butterfly .wing.top:after {
+  left: auto;
+  right: -63px;
+  transform: rotate(-57deg);
+  border-left: 41px solid transparent;
+  border-right: 58px solid transparent;
+}
+.butterfly .wing.top i {
+  top: 70%;
+  left: 60%;
+  transform: translateY(-50%) rotate(30deg);
+}
+.butterfly .wing.top i:before {
+  content: "";
+  top: -24px;
+  left: -6px;
+  transform: rotate(20deg);
+}
+.butterfly .wing.top i:after {
+  content: "";
+  top: 24px;
+  left: -3px;
+  transform: rotate(-20deg);
+}
+.butterfly .wing.top i:last-child {
+  top: 34%;
+  left: 14%;
+  transform: translateY(-50%) rotate(39deg);
+}
+.butterfly .wing.top i:last-child:before {
+  top: -24px;
+  left: 20px;
+  transform: rotate(20deg);
+}
+.butterfly .wing.top i:last-child:after {
+  top: 24px;
+  left: 20px;
+  transform: rotate(-20deg);
+}
+.butterfly .wing.right {
+  top: 0;
+  right: 5px;
+  z-index: 2;
+  border-radius: 47% 26% 98% 31%;
+  transform: rotate(10deg) rotate3d(0, 1, 0, -10deg);
+  transform-origin: bottom left 0;
+  animation: flutter-right 0.3s infinite;
+  background: linear-gradient(-309deg, mediumpurple 0%, mediumpurple 30%, purple 100%);
+}
+.butterfly .wing.right i {
+  top: 70%;
+  left: auto;
+  right: 60%;
+  transform: translateY(-50%) rotate(-30deg);
+}
+.butterfly .wing.right i:before {
+  content: "";
+  top: -24px;
+  left: 6px;
+  transform: rotate(-20deg);
+}
+.butterfly .wing.right i:after {
+  content: "";
+  top: 24px;
+  left: 3px;
+  transform: rotate(20deg);
+}
+.butterfly .wing.right i:last-child {
+  top: 34%;
+  right: 14%;
+  transform: translateY(-50%) rotate(-39deg);
+}
+.butterfly .wing.right i:last-child:before {
+  top: -24px;
+  left: -20px;
+  transform: rotate(-20deg);
+}
+.butterfly .wing.right i:last-child:after {
+  top: 24px;
+  left: -20px;
+  transform: rotate(20deg);
+}
+.butterfly .wing.bottom {
+  bottom: 50px;
+  right: -20px;
+  width: 150px;
+  height: 90px;
+  z-index: 1;
+  border-radius: 31% 47% 98% 100%;
+  transform: rotate(40deg) rotate3d(0, 1, 0, -10deg);
+  transform-origin: top left 0;
+  animation: flutter-bottom 0.3s infinite;
+  background: linear-gradient(-309deg, mediumpurple 0%, mediumpurple 30%, purple 100%);
+}
+.butterfly .wing.bottom:after {
+  content: none;
+}
+.butterfly .wing.bottom i {
+  top: 50%;
+  left: auto;
+  right: 50%;
+  transform: translateY(-50%) rotate(-10deg);
+}
+.butterfly .wing.bottom i:before {
+  content: "";
+  top: -24px;
+  left: 6px;
+  transform: rotate(-20deg);
+}
+.butterfly .wing.bottom i:after {
+  content: "";
+  top: 24px;
+  left: 3px;
+  transform: rotate(20deg);
+}
+.butterfly .wing.bottom i:last-child {
+  top: 40%;
+  right: 8%;
+  transform: translateY(-50%) rotate(-15deg);
+}
+.butterfly .wing.bottom i:last-child:before {
+  top: -18px;
+  left: -20px;
+  transform: rotate(0);
+}
+.butterfly .wing.bottom i:last-child:after {
+  top: 18px;
+  left: -20px;
+  transform: rotate(18deg);
+}
+.butterfly .wing.left {
+  bottom: 50px;
+  left: -20px;
+  width: 150px;
+  height: 90px;
+  z-index: 1;
+  border-radius: 47% 31% 100% 98%;
+  transform: rotate(-40deg) rotate3d(0, 1, 0, 10deg);
+  transform-origin: top right 0;
+  animation: flutter-left 0.3s infinite;
+  background: linear-gradient(309deg, mediumpurple 0%, mediumpurple 30%, purple 100%);
+}
+.butterfly .wing.left:after {
+  content: none;
+}
+.butterfly .wing.left i {
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) rotate(10deg);
+}
+.butterfly .wing.left i:before {
+  content: "";
+  top: -24px;
+  left: 6px;
+  transform: rotate(20deg);
+}
+.butterfly .wing.left i:after {
+  content: "";
+  top: 24px;
+  left: 3px;
+  transform: rotate(-20deg);
+}
+.butterfly .wing.left i:last-child {
+  top: 40%;
+  left: 8%;
+  transform: translateY(-50%) rotate(15deg);
+}
+.butterfly .wing.left i:last-child:before {
+  top: -18px;
+  left: 20px;
+  transform: rotate(0);
+}
+.butterfly .wing.left i:last-child:after {
+  top: 18px;
+  left: 20px;
+  transform: rotate(-18deg);
+}
+
+@keyframes flutter-top {
+  0% {
+    transform: rotate(-10deg) rotate3d(0, 1, 0, 10deg);
+  }
+  50% {
+    transform: rotate(-10deg) rotate3d(0, 1, 0, 60deg);
+  }
+  100% {
+    transform: rotate(-10deg) rotate3d(0, 1, 0, 10deg);
+  }
+}
+@keyframes flutter-right {
+  0% {
+    transform: rotate(10deg) rotate3d(0, 1, 0, -10deg);
+  }
+  50% {
+    transform: rotate(10deg) rotate3d(0, 1, 0, -60deg);
+  }
+  100% {
+    transform: rotate(10deg) rotate3d(0, 1, 0, -10deg);
+  }
+}
+@keyframes flutter-bottom {
+  0% {
+    transform: rotate(40deg) rotate3d(0, 1, 0, -10deg);
+  }
+  50% {
+    transform: rotate(40deg) rotate3d(0, 1, 0, -60deg);
+  }
+  100% {
+    transform: rotate(40deg) rotate3d(0, 1, 0, -10deg);
+  }
+}
+@keyframes flutter-left {
+  0% {
+    transform: rotate(-40deg) rotate3d(0, 1, 0, -10deg);
+  }
+  50% {
+    transform: rotate(-40deg) rotate3d(0, 1, 0, -60deg);
+  }
+  100% {
+    transform: rotate(-40deg) rotate3d(0, 1, 0, -10deg);
+  }
+}
+@keyframes flutter {
+  0% {
+    transform: translate(-52%, -52%);
+  }
+  50% {
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    transform: translate(-52%, -52%);
+  }
+}
