@@ -10,6 +10,10 @@ body{
   font-size: 0.8rem;
 }
 
+.text-bold{
+  font-weight: bold;
+}
+
 a:hover{
   color: #D47500 !important;
 }
