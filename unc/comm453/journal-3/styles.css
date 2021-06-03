@@ -4,12 +4,11 @@
 	--size-dot: 1.5vmin;
 	--size-bar: 0.4vmin;
 	--size-square: 3vmin;
-	
-	/* display: block;
+  display: block;
 	position: relative;
 	width: 50%;
 	display: grid;
-	place-items: center; */
+	place-items: center;
 }
 
 .loader::before,
@@ -21,7 +20,7 @@
 
 .item{
   width: 100%;
-  height: auto;
+  height: 100px;
 }
 
 
