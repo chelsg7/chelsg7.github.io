@@ -4,11 +4,11 @@
 	--size-dot: 1.5vmin;
 	--size-bar: 0.4vmin;
 	--size-square: 3vmin;
-  display: block;
+  /* display: block;
 	position: relative;
 	width: 50%;
 	display: grid;
-	place-items: center;
+	place-items: center; */
 }
 
 .loader::before,
@@ -22,7 +22,7 @@
   width: 100%;
   height: 100px;
   text-align: center;
-  
+
 }
 
 
